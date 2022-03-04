@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboration 7d</title>
+    <link rel="stylesheet" href="css/style7d.css">
+</head>
+<body>
+    <h1>Laboration 7d - Formulär</h1>
+    <h2>Pensionat Sjöstugan</h2>
+    <h3>Förfrågan om rumsbokning</h3>
+    <!-- Lägg in formulären här nedan -->
+    <form id="booking" method="post" data-netlify="true">
+        <fieldset id="room">
+            <legend>Val av rum</legend>
+            <div>
+                <label>
+                    <input type="radio" name="roomTYpe" value="enkel"> Enkelrum
+                </label> 
+                <label>
+                    <input type="radio" name="roomTYpe" value="dubbel" checked> Dubbelrum
+                </label>
+                <label>
+                    <input type="radio" name="roomTYpe" value="familj"> Familj
+                </label>  
+            </div>
+        </fieldset>
+        <fieldset id="date">
+            <legend>Datum och antal nätter</legend>
+            <div>
+                <label>
+                    Ankomstsdag <input type="date" name="arrival">
+                </label>
+                <label>
+                    Antal nätter
+                    <select name="number of nights">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="1 vecka">1 vecka</option>
+                    </select>
+                </label>
+
+            </div>
+        </fieldset>
+        <fieldset id="additions">
+            <legend>Tillägg</legend>
+            <div>
+                <label>
+                    <input type="checkbox" name="extra" value="internet"> Internet
+                </label> 
+                <label>
+                    <input type="radio" name="extra" value="parkering" checked> Parkering
+                </label>
+                <label>
+                    <input type="radio" name="extra" value="sjöutsikt"> Sjöutsikt
+                </label>  
+            </div>
+        </fieldset>
+        <fieldset id="nyhetsbrev">
+            <legend>Nyhetsbrev</legend>
+            <div>
+                <label for="förnamn">Förnamn</label>
+                <input type="text" id="Förnamn" name="Förnamn" required>
+                <label for="efternamn">Efternamn</label>
+                <input type="text" id="efternamn" name="efternamn" required>
+                <label for="mail">Mail</label>
+                <input type="text" id="mail" name="mail" required>
+                <label for="mobil">Mobilnnummer</label>
+                <input type="text" id="mobil" name="mobil" required>
+                <label for="ort">Ort</label>
+                <input type="text" id="ort" name="ort" required>
+            </div>
+        </fieldset>  
+        <div id="send">
+            <input type="submit" value="Skicka förfrågan">
+        </div>     
+
+    </form>
+
+
+
+    
+</body>
+</html>
